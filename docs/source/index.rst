@@ -20,6 +20,7 @@ Contents
 
 .. toctree::
 
+   preface
    usage
    api
 
