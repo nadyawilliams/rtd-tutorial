@@ -1,26 +1,42 @@
-Welcome to Lumache's documentation!
-===================================
+YAML2RPM Documentation
+======================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
+Welcome to the documentation for YAML2RPM.
+
+The documentation explains how you can create an initial setup 
+structure and then provides instructions to build, update 
+and create new admixes (loose collections) for building RPMS
+for the scientifics software.
+
+It also includes a Reference section which provides quick information on several topics.
+**yaml2rpm** is a Python code that users yaml template files describing how
+a specific package is to be built. 
+It shows our recipes  from the created repositories in `RCIC Public  <https://github.com/RCIC-UCI-Public />`_
 and offers a *simple* and *intuitive* API.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
-Lumache has its documentation hosted on Read The Docs.
+**yaml2rpm** has its documentation hosted on Read The Docs.
 
 .. note::
 
    This project is under active development.
 
-Contents
---------
+About yaml2rpm
+---------------
 
 .. toctree::
 
    preface
+   architecture
+
+Installation
+---------------
+
+.. toctree::
+
+   requirements
    usage
    api
-
+   gcc
