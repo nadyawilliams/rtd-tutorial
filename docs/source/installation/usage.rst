@@ -89,6 +89,13 @@ similar to the one developed in the :doc:`official Sphinx tutorial <sphinx:tutor
 No prior experience with Sphinx is required
 and you can follow this tutorial without having done the Sphinx one.
 
+Trying the popup text
+
+Read the Docs will try to build the documentation of your project
+right after you create it.
+To see the build logs,
+click on the :guilabel:`Your documentation is building` link on the :term:`project home`,
+or alternatively navigate to the "Builds" page,
 
 Button
 -------
