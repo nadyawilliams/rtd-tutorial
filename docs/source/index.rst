@@ -26,13 +26,13 @@ how to :ref:`installation` the project.
 
 .. toctree::
    :glob:
-   :caption: ABOUT YAML2RPM
+   :caption: About Yaml2rpm
 
    about/preface
    about/architecture
 
 .. toctree::
-   :caption: INSTALLATION
+   :caption: Installation
 
    requirements
    usage
