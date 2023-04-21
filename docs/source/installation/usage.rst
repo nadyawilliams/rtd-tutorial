@@ -1,7 +1,7 @@
 Usage
 =====
 
-.. _requirements:
+.. _usage:
 
 Installation
 ------------

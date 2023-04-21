@@ -1,7 +1,7 @@
 Preface
 =====
 
-.. _installation:
+.. _preface:
 
 Yaml2rpm
 ------------

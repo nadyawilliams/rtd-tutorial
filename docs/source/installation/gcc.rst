@@ -1,7 +1,7 @@
 GCC admix
 ===========
 
-.. _api:
+.. _gcc:
 
 A deeper example
 ----------------

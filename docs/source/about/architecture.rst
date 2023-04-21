@@ -1,8 +1,7 @@
 Architecture
 =============
 
-.. _preface:
-
+.. _architecture:
 
 
 Python scripts
