@@ -31,6 +31,8 @@ This is code-block bash
    git clone https://github.com/RCIC-UCI-Public/gcc-admix.git
    cd gcc-admix
    make download
+   cd yamlspecs
+   (make bootstrap &> /tmp/bootstrap-gcc.log; make &> /tmp/build-gcc.log) &
 
 An optional last step would be to unbootstrap the system, which will remove any locally-built and installed RPMS that result from
 the bootstrap process.
