@@ -23,18 +23,15 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-About yaml2rpm
----------------
+.. toctree::
+   :glob:
+   :caption: ABOUT YAML2RPM
+
+   about/preface
+   about/architecture
 
 .. toctree::
-
-   preface
-   architecture
-
-Installation
----------------
-
-.. toctree::
+   :caption: INSTALLATION
 
    requirements
    usage
