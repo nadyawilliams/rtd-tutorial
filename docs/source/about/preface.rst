@@ -37,16 +37,16 @@ e, the `%build` directive invokes the `build` target of the Makefile provided he
 
 .. code-block:: console
 
-build:
-	bunzip2 -c $(NAME)-$(VERSION).$(TARBALL_POSTFIX) | $(TAR) -xf -
-	( 							\
+   build:
+	   bunzip2 -c $(NAME)-$(VERSION).$(TARBALL_POSTFIX) | $(TAR) -xf -
+	   ( 							\
 		cd $(NAME)-$(VERSION);				\
 		./configure --prefix=$(PKGROOT); 		\
 		$(MAKE);					\
-	)
+	   )
 
 
-To use Lumache, first install it using pip:
+Example of block command
 
 .. code-block:: console
 
@@ -61,17 +61,19 @@ tested on the official CentOS 7 Amazon machine image.
 If you want to build yaml2rpm RPMS and install them from source repo, see Building
 ### Prerequisites
 
-1. Python 2 or 3. Required python modules: argparse, socket, datetime. There are 4 python modules that will be automatically
+(1) Python 2 or 3. Required python modules: argparse, socket, datetime. There are 4 python modules that will be automatically
    built and installed during the "Building" step:
 
    - future: for compatibility of python 2/3 code
    - ruamel-yaml & ruamle-ycml-clib: used by the  main script gen-definitions.py
    - setuptools: for build python dependent packages.
 
-1. If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
-   want to make certain you have the following packages and package groups installed
-   ```bash
-    yum groupinstall "Development Tools" "Console Internet Tools"
-    yum install redhat-lsb wget zlib-devel environment-modules
-    . /etc/profile.d/modules.sh
+(2) If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
+    want to make certain you have the following packages and package groups installed
+   
+    ::
+
+       yum groupinstall "Development Tools" "Console Internet Tools"
+       yum install redhat-lsb wget zlib-devel environment-modules
+       . /etc/profile.d/modules.sh
 
