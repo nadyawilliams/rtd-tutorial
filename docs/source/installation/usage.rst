@@ -81,4 +81,57 @@ This is a paragraph that contains `a link`_.
 .. _a link: https://domain.invalid/
 
 
+This example is fro mthe top tutorial of read the docs
+The tutorial is aimed at people interested in learning
+how to use Read the Docs to host their documentation projects.
+You will fork a fictional software library
+similar to the one developed in the :doc:`official Sphinx tutorial <sphinx:tutorial/index>`.
+No prior experience with Sphinx is required
+and you can follow this tutorial without having done the Sphinx one.
 
+
+Button
+-------
+
+trying from tutorial text snippet
+here you will see a green :guilabel:`Use this template` button.
+Click it to open a new page that will ask you for some details:
+
+TEXT
+------
+
+This is the repository you will import on Read the Docs,
+and it contains the following files:
+
+``README.rst``
+  Basic description of the repository, you will leave it untouched.
+
+``pyproject.toml``
+  Python project metadata that makes it installable.
+  Useful for automatic documentation generation from sources.
+
+``lumache.py``
+  Source code of the fictional Python library.
+
+``docs/``
+  Directory holding all the Sphinx documentation sources,
+  including the Sphinx configuration ``docs/source/conf.py``
+  and the root document ``docs/source/index.rst`` written in reStructuredText.
+
+
+Figures 
+--------
+
+This is made with figure
+
+.. figure:: /installation/images/usageStats.png
+   :width: 80%
+   :align: center
+   :alt: Usage stats 
+
+   Usage stats image 
+
+
+This is made with image
+
+.. image :: images/loadStats.png
