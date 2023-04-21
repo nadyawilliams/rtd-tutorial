@@ -36,15 +36,15 @@ This software relies on only one Rocks-created software package, but otherwise i
 
 Motivation
 ------------
-The approach used here is one where programmatic translations are used to progressively create a subdirectory structure 
-that mirrors the way Rocks (`an example of building a qrencode RPM <https://github.com/rocksclusters/base/blob/master/src/qrencode/>`)
-builds RPMS. In that structure, an RPM spec file is automatically created and files are put in appropriate 
-places in which `rpmbuild <https://linux.die.net/man/8/rpmbuild/>`_) can success fully build a package.  
-The generated spec file must define a source in a *%source* as well as *%build, %install, %file* 
-and other RPM-specific directives.  In particular, the *%source* is a tarball of this directory in gith
+The approach used here is one where programmatic translations are used to progressively create a subdirectory structure that mirrors
+the way Rocks builds RPMS (`an example of building a qrencode RPM <https://github.com/rocksclusters/base/blob/master/src/qrencode/>`_).
+In that structure, an RPM spec file is automatically created and files are put in appropriate 
+places in which `rpmbuild <https://linux.die.net/man/8/rpmbuild/>`_ can success fully build a package.  
+The generated spec file must define a source in a ``%source`` as well as ``%build, %install, %file`` 
+and other RPM-specific directives.  In particular, the ``%source`` is a tarball of this directory in gith
 ub (e.g. the base/src/qrencode directory). However, prior to creating the tarball, the upstream tarball 
 (e.g. qrencode-3.4.0.tar.bz2) must be placed in base/src/qrencode directory.  The automatically generated spec fil e,
-the *%build* directive invokes the **build** target of the Makefile provided here. In this example the section looks like:
+the ``%build`` directive invokes the **build** target of the Makefile provided here. In this example the section looks like:
 
 .. code-block:: console
 
@@ -65,7 +65,7 @@ While the above is very simple (and actually a quite common build motif), there 
 something is built, what it is dependent upon, and the like. In real use on, for example,
 academic computing clusters groupings of software have common dependencies.  A routine example is software that depends 
 upon a newer version of **gcc**. The new version of gcc must be installed alongside the system version. 
-The `gcc-admix repository <https://github.com/RCIC-UCI-Public/gcc-admix/>` uses **YAML2RPM** to build an
+The `gcc-admix repository <https://github.com/RCIC-UCI-Public/gcc-admix/>`_ uses **YAML2RPM** to build an
 updated version of gcc, a module file, and some compatible libraries.  Those packages can then be installed
 and used to build other software.  
 
@@ -100,7 +100,7 @@ If you want to build yaml2rpm RPMS and install them from source repo, see Buildi
        . /etc/profile.d/modules.sh
 
 3. Install the development RPMS.
-   Go to the `Development RPMS <https://github.com/RCIC-UCI-Public/development-RPMS#development-rpms/>` repository 
+   Go to the `Development RPMS <https://github.com/RCIC-UCI-Public/development-RPMS#development-rpms/>`_ repository 
    for the latest pre-built RPMs and instructions. After following those instructions, you can build your first RPM from source.
 
 Building
