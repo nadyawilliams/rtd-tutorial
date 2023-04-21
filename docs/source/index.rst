@@ -1,3 +1,7 @@
+.. note::
+
+   This project is under active development.
+
 YAML2RPM Documentation
 ======================
 
@@ -19,9 +23,6 @@ how to :ref:`installation` the project.
 
 **yaml2rpm** has its documentation hosted on Read The Docs.
 
-.. note::
-
-   This project is under active development.
 
 .. toctree::
    :glob:
