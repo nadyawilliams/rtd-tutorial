@@ -52,6 +52,7 @@ a *defaults* file.  Here is a very simple yaml file taken from the samples direc
 
 
 .. code-block:: yaml
+   :caption: filename.yaml
 
    package: iperf version 3 network tester
    name: iperf
