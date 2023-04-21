@@ -3,7 +3,7 @@
 # -- Project information
 
 project = u'YAML2RPM'
-copyright = u'2023, placeholder RCIC group - University of California, Irvine'
+copyright = u'2023, placeholder RCIC group - University'
 author = u'RCIC'
 
 release = '0.1'
