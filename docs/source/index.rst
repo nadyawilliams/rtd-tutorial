@@ -7,22 +7,18 @@ YAML2RPM Documentation
 
 Welcome to the documentation for YAML2RPM.
 
-The documentation explains how you can create an initial setup 
-structure and then provides instructions to build, update 
-and create new admixes (loose collections) for building RPMS
-for the scientifics software.
+We developed YAML2RPM to manage the multiple versions, dependencies, and other details of a resilient software deployment.
+**YAML**-formatted specification files are used to describe how to build an application, encode dependencies, and where to install.
+Through programmatic translation via a **custom python program**, the YAML input generates the ingredients to build a 
+RedHat-compatible RPM using the distribution's native **rpmbuild** tool. The full process creates human-recognizable package names,
+supports multiple installed versions, and easily encodes dependencies for repeatable and robust application stacks.
+In a full-stack recompilation, over 2000 individual RPMs are created.
 
-It also includes a Reference section which provides quick information on several topics.
-**yaml2rpm** is a Python code that users yaml template files describing how
-a specific package is to be built. 
-It shows our recipes  from the created repositories in `RCIC Public  <https://github.com/RCIC-UCI-Public />`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+The documentation will describe the process, point out many advantages and describe many examples in detail.
+Our approach makes routine packaging of applications very straightforward and reduces difficult builds to 
+manageable ones. YAML2RPM and our recipes for building 100s of applications are open source.
 
 **yaml2rpm** has its documentation hosted on Read The Docs.
-
 
 .. toctree::
    :glob:
