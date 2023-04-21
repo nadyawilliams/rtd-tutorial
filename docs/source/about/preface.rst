@@ -17,13 +17,14 @@ This software uses the underlying **Rocks methodology** for automatically creati
 files to create packages.  Where it differs from Rocks is that a
 YAML-based specification of a package is used to define the specific details of a
 component, instead of a subdirectory structure for each package 
-(see the `rocksclusters github rolls https://github.com/rocksclusters/>`_ for many examples of the subdirectory structure)
+(see the `rocksclusters github rolls <https://github.com/rocksclusters/>`_ for many examples of the subdirectory structure)
 
 Most (open-source) software starts with a source tarball, extracts the tarball, 
 configures for the local environment,  executes **make** and then executes **make install**
 In the above, **make** might be **cmake** or some other software-specific tool. The last step,
 to turn the result of the steps, community-standard, process into an installable package
 is often deemed too time-consuming or difficult. The advantages of creating a package include:
+
 - File system conflicts resulting from different software builds are flagged prior-to-install
 - Software dependency resolution staves off many errors when attempting to remove
   a key software package that other packages depend upon
@@ -36,14 +37,14 @@ This software relies on only one Rocks-created software package, but otherwise i
 Motivation
 ------------
 The approach used here is one where programmatic translations are used to progressively create a subdirectory structure 
-that mirrors the way Rocks (`an example of building a qrencode RPM https://github.com/rocksclusters/base/blob/master/src/qrencode/>`)
+that mirrors the way Rocks (`an example of building a qrencode RPM <https://github.com/rocksclusters/base/blob/master/src/qrencode/>`)
 builds RPMS. In that structure, an RPM spec file is automatically created and files are put in appropriate 
-places in which rpmbuild (https://linux.die.net/man/8/rpmbuild) can success fully build a package.  
-The generated spec file must define a source in a **%source** as well as **%build, %install, %file** 
-and other RPM-specific directives.  In particular, the %source is a tarball of this directory in gith
+places in which `rpmbuild <https://linux.die.net/man/8/rpmbuild/>`_) can success fully build a package.  
+The generated spec file must define a source in a *%source* as well as *%build, %install, %file* 
+and other RPM-specific directives.  In particular, the *%source* is a tarball of this directory in gith
 ub (e.g. the base/src/qrencode directory). However, prior to creating the tarball, the upstream tarball 
 (e.g. qrencode-3.4.0.tar.bz2) must be placed in base/src/qrencode directory.  The automatically generated spec fil e,
-the **%build** directive invokes the **build** target of the Makefile provided here. In this example the section looks like:
+the *%build* directive invokes the **build** target of the Makefile provided here. In this example the section looks like:
 
 .. code-block:: console
 
@@ -58,12 +59,14 @@ the **%build** directive invokes the **build** target of the Makefile provided h
 This build target looks very similar to what you would do if your are building software without placing it into a package.
 And that is intentional.  In building literally hundreds of packages, the basic approach works quite well, but it comes
 that price of excessive code copying. The goal of the YAML-based generation of a package is to remove as much 
-gratuitous "copy-and-paste" structure as possible.  While the above is very simple (and actually a quite common build motif),
-there are many variations on how something is built, what it is dependent upon, and the like. In real use on, for example,
+gratuitous "copy-and-paste" structure as possible.  
+
+While the above is very simple (and actually a quite common build motif), there are many variations on how 
+something is built, what it is dependent upon, and the like. In real use on, for example,
 academic computing clusters groupings of software have common dependencies.  A routine example is software that depends 
-upon a newer version of gcc. Th e new version of gcc must be installed alongside the system version. 
-The `gcc-admix repository https://github.com/RCIC-UCI-Public/gcc-admix/>` uses **YAML2RPM** to build an
-updated version of gcc, a module fi le, and some compatible libraries.  Those packages can then be installed
+upon a newer version of **gcc**. The new version of gcc must be installed alongside the system version. 
+The `gcc-admix repository <https://github.com/RCIC-UCI-Public/gcc-admix/>` uses **YAML2RPM** to build an
+updated version of gcc, a module file, and some compatible libraries.  Those packages can then be installed
 and used to build other software.  
 
 Yaml2rpm set out to solve part of the problem of building and packaging relatively complex software.  At its core, 
@@ -80,12 +83,12 @@ If you want to build yaml2rpm RPMS and install them from source repo, see Buildi
 
 **Prerequisites**
 
-1. Python 2 or 3. Required python modules: argparse, socket, datetime. There are 4 python modules that will be automatically
+1. Python 3. Required python modules: argparse, socket, datetime. There are 4 python modules that will be automatically
    built and installed during the "Building" step:
 
    - future: for compatibility of python 2/3 code
    - ruamel-yaml & ruamle-ycml-clib: used by the  main script gen-definitions.py
-   - setuptools: for build python dependent packages.
+   - setuptools: for building python dependent packages.
 
 2. If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
    want to make certain you have the following packages and package groups installed
@@ -97,7 +100,7 @@ If you want to build yaml2rpm RPMS and install them from source repo, see Buildi
        . /etc/profile.d/modules.sh
 
 3. Install the development RPMS.
-   Go to the `Development RPMS https://github.com/RCIC-UCI-Public/development-RPMS#development-rpms/>` repository 
+   Go to the `Development RPMS <https://github.com/RCIC-UCI-Public/development-RPMS#development-rpms/>` repository 
    for the latest pre-built RPMs and instructions. After following those instructions, you can build your first RPM from source.
 
 Building
