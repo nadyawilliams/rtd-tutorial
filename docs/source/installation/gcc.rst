@@ -13,6 +13,8 @@ and a set a packages. **WARNING! This process will install RPMS as it builds. Yo
 
 Here is the full process for building gcc using the gcc-admix repo
 
+This is block-code console
+
 .. code-block:: console
 
    git clone https://github.com/RCIC-UCI-Public/gcc-admix.git
@@ -20,6 +22,15 @@ Here is the full process for building gcc using the gcc-admix repo
    make download
    cd yamlspecs
    (make bootstrap &> /tmp/bootstrap-gcc.log; make &> /tmp/build-gcc.log) &
+
+
+This is code-block bash
+
+.. code-block:: bash
+
+   git clone https://github.com/RCIC-UCI-Public/gcc-admix.git
+   cd gcc-admix
+   make download
 
 An optional last step would be to unbootstrap the system, which will remove any locally-built and installed RPMS that result from
 the bootstrap process.
