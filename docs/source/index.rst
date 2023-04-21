@@ -34,7 +34,7 @@ how to :ref:`installation` the project.
 .. toctree::
    :caption: Installation
 
-   requirements
-   usage
-   api
-   gcc
+   installation/requirements
+   installation/usage
+   installation/api
+   installation/gcc
