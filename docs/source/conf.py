@@ -9,8 +9,12 @@ author = u'RCIC'
 release = '0.1'
 version = '0.1.0'
 
-# -- General configuration
+# add path to python code snippets
+import sys
+import os
+sys.path.insert(0, os.path.abspath('src'))
 
+# -- General configuration
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
