@@ -34,3 +34,9 @@ manageable ones. YAML2RPM and our recipes for building 100s of applications are 
    installation/usage
    installation/api
    installation/gcc
+
+.. toctree::
+   :caption: Reference
+
+   glossary
+   changelog
