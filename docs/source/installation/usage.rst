@@ -109,6 +109,22 @@ To see the build logs,
 click on the :guilabel:`Your documentation is building` link on the :term:`project home`,
 or alternatively navigate to the :guilabel:`Builds` page,
 
+
+Trying a note:
+
+.. tip::
+
+	We strongly recommend :doc:`pinning all the versions </installation/api>` required to build the documentation to avoid unexpected build errors.
+
+.. attention::
+
+	We strongly recommend reading the :doc:`pinning all the versions </about/architecture>` 
+
+.. note::
+
+	This is a simple note 
+
+
 Button
 -------
 
