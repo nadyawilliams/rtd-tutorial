@@ -24,11 +24,12 @@ Prerequisites
 
 1. If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
    want to make certain you have the following packages and package groups installed
-   ```bash
-    yum groupinstall "Development Tools" "Console Internet Tools"
-    yum install redhat-lsb wget zlib-devel environment-modules
-    . /etc/profile.d/modules.sh
-   ```
+
+   .. code-block:: bash
+
+      yum groupinstall "Development Tools" "Console Internet Tools"
+      yum install redhat-lsb wget zlib-devel environment-modules
+      . /etc/profile.d/modules.sh
 
 1. Install the development RPMS
 
