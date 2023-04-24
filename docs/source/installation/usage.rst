@@ -107,7 +107,7 @@ Read the Docs will try to build the documentation of your project
 right after you create it.
 To see the build logs,
 click on the :guilabel:`Your documentation is building` link on the :term:`project home`,
-or alternatively navigate to the "Builds" page,
+or alternatively navigate to the :guilabel:`Builds` page,
 
 Button
 -------

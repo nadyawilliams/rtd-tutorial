@@ -7,7 +7,7 @@ Architecture
 Python scripts
 --------------
 
-There is one main driver scipt called ** gen-definitions.py**
+There is one main driver scipt called ``gen-definitions.py``
 This is the definitions parser that reads info defined in yaml files and creates
 necessary output files in order to build RPMS.
 

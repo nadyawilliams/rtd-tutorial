@@ -59,10 +59,11 @@ a *defaults* file.  Here is a very simple yaml file taken from the samples direc
    version: "3.6"
    extension: tar.gz
    description: >
-       iperf3 version {{ version }}. iperf is a tool for active measurements of the maximum achievable
-       bandwidth on IP networks.  It supports tuning of various parameters
-       related to timing, protocols, and buffers.  For each test it reports
-       the measured throughput / bitrate, loss, and other parameters.
+       iperf3 version {{ version }}. iperf is a tool for active measurements 
+       of the maximum achievable bandwidth on IP networks. It supports tuning
+       of various parameters related to timing, protocols, and buffers. For
+       For each test it reports the measured throughput/bitrate, loss,
+       and other parameters.
    vendor_source: https://downloads.es.net/pub/iperf/iperf-{{ version }}.tar.gz
    root: "{{ pkg_defaults.app_path }}/{{ name }}/{{ version }}"
    build:

@@ -22,7 +22,7 @@ Prerequisites
    - ruamel-yaml & ruamle-ycml-clib: used by the  main script gen-definitions.py
    - setuptools: for build python dependent packages.
 
-1. If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
+2. If you are using a very stripped-down CentOS image (similar to the official CentOS 7 image in Amazon, you will
    want to make certain you have the following packages and package groups installed
 
    .. code-block:: bash
@@ -31,9 +31,9 @@ Prerequisites
       yum install redhat-lsb wget zlib-devel environment-modules
       . /etc/profile.d/modules.sh
 
-1. Install the development RPMS
+3. Install the development RPMS
 
-   Go to the [Development RPMS](https://github.com/RCIC-UCI-Public/development-RPMS#development-rpms) repository
+   Go to the `Development RPMS repository <https://github.com/RCIC-UCI-Public/development-RPMS>`_ 
    for the latest pre-built RPMs and instructions. After following those instructions, you can build your first RPM from source.
 
 
