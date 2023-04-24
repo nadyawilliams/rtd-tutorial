@@ -15,6 +15,8 @@ To use Lumache, first install it using pip:
 Creating recipes
 ----------------
 
+This is coming from lumanch.py file
+
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
 
@@ -32,6 +34,16 @@ For example:
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
+
+add python source file as an example
+
+.. literalinclude:: files/new.py
+   :language: python
+
+add bash source file as an example
+
+.. literalinclude:: files/xmodl
+   :language: bash
 
 List
 -------------
