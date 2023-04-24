@@ -7,3 +7,8 @@ API
    :toctree: generated
 
    lumache
+
+.. autosummary::
+   :toctree: generated
+
+   usage
