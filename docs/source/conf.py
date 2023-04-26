@@ -15,12 +15,15 @@ import os
 sys.path.insert(0, os.path.abspath('src'))
 
 # -- General configuration
+# add recommonmark and sphinx_markdown_tables for yamldoc processing
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'recommonmark',
+    'sphinx_markdown_tables',
 ]
 
 intersphinx_mapping = {
@@ -40,8 +43,8 @@ epub_show_urls = 'footnote'
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+# source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
