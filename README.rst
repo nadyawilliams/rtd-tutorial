@@ -54,3 +54,7 @@ Building HTML locally for testing
    .. code-block:: console
 
       yamldoc file.yaml > file.md
+
+   Using yamldoc locally to create md files is ok, however 
+   Main build on read the docs fails in importing sphinx_markdown_tables
+   module. Comment out in conf.py
