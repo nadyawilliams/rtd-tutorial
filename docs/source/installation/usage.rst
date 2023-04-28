@@ -12,6 +12,21 @@ To use Lumache, first install it using pip:
 
    (.venv) $ pip install lumache
 
+This is an example of using just the double colon::
+
+   ls -l
+   pwd
+
+
+This is an example of code block with language:
+
+.. code-block:: bash
+
+   ls -l
+   pwd
+   conda config --add channels defaults
+   conda config --add channels conda-forge
+
 Creating recipes
 ----------------
 
@@ -44,6 +59,9 @@ add bash source file as an example
 
 .. literalinclude:: files/xmodl
    :language: bash
+
+.. literalinclude:: files/ex.yaml
+   :language: yaml
 
 List
 -------------
