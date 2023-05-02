@@ -38,5 +38,5 @@ manageable ones. YAML2RPM and our recipes for building 100s of applications are 
 .. toctree::
    :caption: Reference
 
-   glossary
-   changelog
+   references/glossary
+   references/changelog
