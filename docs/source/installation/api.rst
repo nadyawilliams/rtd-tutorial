@@ -12,3 +12,8 @@ API
    :toctree: generated
 
    usage
+
+.. autosummary::
+   :toctree: generated
+
+   plotRequests
