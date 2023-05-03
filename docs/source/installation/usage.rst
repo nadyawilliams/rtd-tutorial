@@ -6,11 +6,11 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use Pkgname, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   (.venv) $ pip install pkgname
 
 This is an example of using just the double colon::
 
@@ -30,7 +30,7 @@ This is an example of code block with language:
 Creating recipes
 ----------------
 
-This is coming from lumanch.py file
+This is coming from the original lumache.py file
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
@@ -43,10 +43,20 @@ will raise an exception.
 
 .. autoexception:: lumache.InvalidKindError
 
+This is coming from plotRequests python file
+
+This function prints all requests
+
+.. autofunction:: plotRequests.printAllRequests
+
+This function prints sw related requests
+
+.. autofunction:: plotRequests.printSwRequests
+
 For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
+>>> import pkgname
+>>> pkgname.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
 
 
@@ -163,7 +173,7 @@ and it contains the following files:
   Python project metadata that makes it installable.
   Useful for automatic documentation generation from sources.
 
-``lumache.py``
+``pkgname.py``
   Source code of the fictional Python library.
 
 ``docs/``
