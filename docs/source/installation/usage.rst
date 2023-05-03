@@ -43,15 +43,7 @@ will raise an exception.
 
 .. autoexception:: lumache.InvalidKindError
 
-This is coming from plotRequests python file
 
-This function prints all requests
-
-.. autofunction:: plotRequests.printAllRequests
-
-This function prints sw related requests
-
-.. autofunction:: plotRequests.printSwRequests
 
 For example:
 

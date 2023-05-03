@@ -13,10 +13,5 @@ API
 
    usage
 
-.. autosummary::
-   :toctree: generated
-
-   plotRequests
-
 
 Add empty line
