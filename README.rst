@@ -2,16 +2,16 @@ Template for the Read the Docs tutorial
 =======================================
 
 This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+with some basic Sphinx docs:
 
-Read the tutorial here: https://docs.readthedocs.io/en/stable/tutorial/
+- read the tutorial : https://docs.readthedocs.io/en/stable/tutorial/
+- tutorial template github  https://github.com/readthedocs/tutorial-template/
 
-This documentation:
+This test documentation:
 
 - github repo https://github.com/nadyawilliams/rtd-tutorial
 - website docs https://npw-rtd-tutorial.readthedocs.io/en/latest/index.html
 - readthedocs dashboard https://readthedocs.org/dashboard/npw-rtd-tutorial
-
 
 Building HTML locally for testing
 ---------------------------------
