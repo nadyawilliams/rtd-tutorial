@@ -4,9 +4,13 @@ Template for the Read the Docs tutorial
 This GitHub template includes fictional Python library
 with some basic Sphinx docs.
 
-Read the tutorial here:
+Read the tutorial here: https://docs.readthedocs.io/en/stable/tutorial/
 
-https://docs.readthedocs.io/en/stable/tutorial/
+This documentation:
+
+- github repo https://github.com/nadyawilliams/rtd-tutorial
+- website docs https://npw-rtd-tutorial.readthedocs.io/en/latest/index.html
+- readthedocs dashboard https://readthedocs.org/dashboard/npw-rtd-tutorial
 
 
 Building HTML locally for testing
@@ -31,30 +35,31 @@ Building HTML locally for testing
 3. Point your browser to `build/html/index.html`.
 
 
-4. optional yamldoc sphinx integration
+optional yamldoc sphinx integration
+-----------------------------------
 
-   This is for reference only. The integration is described in
-   http://chrisbcole.me/yamldoc/sphinx/
+This is for reference only. The integration is described in
+http://chrisbcole.me/yamldoc/sphinx/
 
-   However it does not support autosummary-like inclusion of python or other
-   language files.
+However it does not support autosummary-like inclusion of python or other
+language files.
 
-   Keep for a reference
+Keep for a reference
 
-   .. code-block:: console
+.. code-block:: console
 
-      pip3 install recommonmark
-      pip3 install sphinx-markdown-tables
-      pip3 install yamldoc
+   pip3 install recommonmark
+   pip3 install sphinx-markdown-tables
+   pip3 install yamldoc
 
-   Edit conf.py file per above link info
+Edit conf.py file per above link info
 
-   Create md files from yaml files via
+Create md files from yaml files via
 
-   .. code-block:: console
+.. code-block:: console
 
-      yamldoc file.yaml > file.md
+   yamldoc file.yaml > file.md
 
-   Using yamldoc locally to create md files is ok, however 
-   Main build on read the docs fails in importing sphinx_markdown_tables
-   module. Comment out in conf.py
+Using yamldoc locally to create md files is ok, however 
+Main build on read the docs fails in importing sphinx_markdown_tables
+module. Comment out in conf.py
